@@ -40,7 +40,11 @@ GETTING STARTED
           	/usr/inferno
 
           Acme is a multi-tasking system; each process has its own
+<<<<<<< HEAD
           namespace of visibile files. The namespace can be modified with
+=======
+          namespace of visible files. The namespace can be modified with
+>>>>>>> 5c5c6d8916f1d6e4815de8f5f436889b2b74843e
           bind(1) and mount commands. Change the acme namespace by
           prefixing mount and bind commands with 'Local'.  For example,
           mount the Plan 9 source code server by middle-selecting this
@@ -48,7 +52,11 @@ GETTING STARTED
           	Local mount -A tcp!sources.cs.bell-labs.com!9fs /n/sources
 
           Acme is also a shell and comes with a set of Unix-like
+<<<<<<< HEAD
           commands. Commands lines can be typed anywhere and
+=======
+          commands. Commandlines can be typed anywhere and
+>>>>>>> 5c5c6d8916f1d6e4815de8f5f436889b2b74843e
           executed by selecting them and clicking on the selected text
           with the middle mouse button. If you need to open a terminal
           window middle click on the command: win
@@ -59,12 +67,21 @@ GETTING STARTED
 
           You'll probably want to work on files in your host system.  The
           local drives should already be mounted below /n, for example, 
+<<<<<<< HEAD
           on Nt see /n/C, on Linux or MacOSX see /n/local
 
 WIKI
           You can read and edit the Inferno or Plan 9 wikis. Mount the 
           Inferno wiki filesystem,
           	Local mount -A tcp!canto.hopto.org!wiki /mnt/wiki
+=======
+          on Nt see /n/C on Linux or MacOSX see /n/local
+
+WIKI
+          You can read and edit the Inferno or Plan 9 wikis. Mount the 
+          Plan 9 wiki filesystem,
+          	Local mount -A tcp!plan9.bell-labs.com!wiki /mnt/wiki
+>>>>>>> 5c5c6d8916f1d6e4815de8f5f436889b2b74843e
           Then run the wiki browser,
           	Wiki
 
