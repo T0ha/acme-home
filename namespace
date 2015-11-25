@@ -1,1 +1,2 @@
 bind -ia #C /
+bind -ac '#U*/home' /home

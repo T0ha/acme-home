@@ -46,3 +46,12 @@ fn src {
 fn awk {
 	os awk $*
 }
+
+fn cwd2host {
+	(_ _ pwd) := ${split [/] $%}
+	echo /${join '/' $pwd}
+	}
+	
+fn nitrogen {
+	os  -d `{cwd2host} nitrogen $*
+	}

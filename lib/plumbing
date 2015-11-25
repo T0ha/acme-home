@@ -90,3 +90,11 @@ kind is text
 data matches 'Local (.*)'
 plumb to none
 plumb start /dis/sh.dis -n -c $1
+
+# Erlang function goes to acme to function defenition
+kind is text
+data matches '([a-z_]+):([a-z0-9_]+)\('
+dir isfile $1.erl
+data set $file
+attr set 'action=showfile	addr=/^$2\(/'
+plumb to edit

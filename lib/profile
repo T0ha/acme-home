@@ -27,7 +27,8 @@ if {! ftest -d /fonts/lucidasans}{
 	acme-Font=/fonts/vera/VeraMono/VeraMono.14.font
 }
 run /acme/color/evening
-acme -a $ghome  
+acme -a $ghome $home/lib
+
 sleep 1
 waitid = `{sed '' /prog/*/status | sort -n | grep Acme | sed 1q | sed 's/^ +([0-9]+) +.*/\1/'}
 read < /prog/^$waitid^/wait
